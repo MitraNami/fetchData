@@ -28,7 +28,7 @@ function getJson() {
 
 
 function getExternalData() {
-  fetch('https://api.github.com/ers')
+  fetch('https://api.github.com/users')
     .then(handleError)
     .then(res => res.json())
     .then(users => {
